@@ -1,6 +1,3 @@
-import json
-import pickle
-
 import polars as pl
 
 from cricket_etl.helpers.catalog import Catalog
@@ -9,7 +6,7 @@ from cricket_etl.helpers.logger import Logger
 
 logger = Logger("bronze")
 
-def extract_match_info(match_id: str, match_info_dict: dict):
+def extract_match_info(match_id: str, match_info_dict: dict) -> dict:
     extracted_data = {
             "match_id": match_id,
             "balls_per_over": match_info_dict.get("balls_per_over"),
@@ -69,7 +66,7 @@ def get_match_info_df(catalog: Catalog) -> pl.DataFrame:
     return df_match_info
 
 
-def write_raw_match_info(df_match_info: pl.DataFrame, catalog: Catalog) -> None:
+def write_match_info(df_match_info: pl.DataFrame, catalog: Catalog) -> None:
     df_match_info.write_parquet(catalog.bronze.match_info_bronze)
     logger.info("Match info write completed")
 
@@ -77,4 +74,4 @@ def write_raw_match_info(df_match_info: pl.DataFrame, catalog: Catalog) -> None:
 if __name__ == "__main__":
     catalog = Catalog()
     df_match_info = get_match_info_df(catalog)
-    write_raw_match_info(df_match_info, catalog)
+    write_match_info(df_match_info, catalog)

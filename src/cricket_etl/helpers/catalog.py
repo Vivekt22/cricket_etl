@@ -20,13 +20,22 @@ class BaseDataPaths:
     silver = DATA_PATH.joinpath("04_silver")
     gold = DATA_PATH.joinpath("05_gold")
     model = DATA_PATH.joinpath("06_model")
-    helpers = DATA_PATH.joinpath("07_helpers")
+    mapping = DATA_PATH.joinpath("07_helpers", "mapping")
     logs = DATA_PATH.joinpath("98_logs")
     temp = DATA_PATH.joinpath("99_temp")
+    database = DATA_PATH.joinpath("08_database")
 
 class BronzeDataPaths:
     match_info_bronze = BaseDataPaths.bronze.joinpath("match_info_bronze.parquet")
     innings_bronze = BaseDataPaths.bronze.joinpath("innings_bronze.parquet")
+    registry_bronze = BaseDataPaths.bronze.joinpath("registry_bronze.parquet")
+
+class SilverDataPaths:
+    wide_table = BaseDataPaths.silver.joinpath("wide_table.parquet")
+
+class MappingDataPaths:
+    team_league_map = BaseDataPaths.mapping.joinpath("team_league_map.csv")
+    venue_map = BaseDataPaths.mapping.joinpath("venue_map.csv")
 
 class Catalog:
     cricsheet_url = "https://cricsheet.org/downloads/all_json.zip"
@@ -35,6 +44,9 @@ class Catalog:
     ingest = BaseDataPaths.ingest
     raw = BaseDataPaths.raw
     bronze = BronzeDataPaths
+    silver = SilverDataPaths
+    mapping = MappingDataPaths
+    database = BaseDataPaths.database.joinpath("cricket.duckdb")
 
 
 if __name__ == "__main__":
