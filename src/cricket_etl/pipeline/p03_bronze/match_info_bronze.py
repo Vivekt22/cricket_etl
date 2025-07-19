@@ -59,6 +59,17 @@ def get_match_info_df(catalog: Catalog) -> pl.DataFrame:
         for raw_file in catalog.raw.glob("*.pkl")
     ])
 
+    df_match_info = df_match_info.cast(
+        {
+            "balls_per_over": pl.Int64,
+            "start_date": pl.Date,
+            "end_date": pl.Date,
+            "win_margin": pl.Int64,
+            "default_overs": pl.Int64,
+            "season": pl.Int64
+        }
+    )
+
     match_count = len(df_match_info)
 
     logger.info(f"Match info extraction completed for {match_count} matches")

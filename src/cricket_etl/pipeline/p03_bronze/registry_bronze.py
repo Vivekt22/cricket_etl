@@ -29,7 +29,7 @@ def get_registry_df(catalog: Catalog) -> pl.DataFrame:
         except Exception as e:
             logger.warning(f"Failed to extract registry from {raw_file.stem}: {e}")
 
-    df_registry = pl.DataFrame(all_registry_rows, schema=["match_id", "person_name", "person_id"])
+    df_registry = pl.DataFrame(all_registry_rows, schema=["match_id", "person_name", "person_id"], orient='row')
 
     logger.info(f"Registry extraction completed for {len(df_registry)} people")
 

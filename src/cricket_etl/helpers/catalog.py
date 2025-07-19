@@ -18,12 +18,11 @@ class BaseDataPaths:
     raw = DATA_PATH.joinpath("02_raw")
     bronze = DATA_PATH.joinpath("03_bronze")
     silver = DATA_PATH.joinpath("04_silver")
-    gold = DATA_PATH.joinpath("05_gold")
-    model = DATA_PATH.joinpath("06_model")
-    mapping = DATA_PATH.joinpath("07_helpers", "mapping")
+    model = DATA_PATH.joinpath("05_model")
+    mapping = DATA_PATH.joinpath("06_helpers", "mapping")
+    database = DATA_PATH.joinpath("07_database")
     logs = DATA_PATH.joinpath("98_logs")
     temp = DATA_PATH.joinpath("99_temp")
-    database = DATA_PATH.joinpath("08_database")
 
 class BronzeDataPaths:
     match_info_bronze = BaseDataPaths.bronze.joinpath("match_info_bronze.parquet")
@@ -45,6 +44,7 @@ class Catalog:
     raw = BaseDataPaths.raw
     bronze = BronzeDataPaths
     silver = SilverDataPaths
+    model = BaseDataPaths.model
     mapping = MappingDataPaths
     database = BaseDataPaths.database.joinpath("cricket.duckdb")
 

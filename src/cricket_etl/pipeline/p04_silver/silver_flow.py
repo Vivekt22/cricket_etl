@@ -1,5 +1,3 @@
-import duckdb as db
-
 from cricket_etl.helpers.catalog import Catalog
 from cricket_etl.pipeline.p04_silver.create_schema import create_schema
 from cricket_etl.pipeline.p04_silver.create_views import create_views

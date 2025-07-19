@@ -1,4 +1,6 @@
 import pickle
+from functools import wraps
+import duckdb
 from cricket_etl.helpers.catalog import Catalog
 
 catalog = Catalog()
