@@ -1,4 +1,3 @@
-import orjson
 import json
 import pickle
 from cricket_etl.helpers.catalog import Catalog

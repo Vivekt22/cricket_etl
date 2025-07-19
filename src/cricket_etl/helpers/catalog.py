@@ -24,6 +24,9 @@ class BaseDataPaths:
     logs = DATA_PATH.joinpath("98_logs")
     temp = DATA_PATH.joinpath("99_temp")
 
+class BronzeDataPaths:
+    match_info_bronze = BaseDataPaths.bronze.joinpath("match_info_bronze.parquet")
+    innings_bronze = BaseDataPaths.bronze.joinpath("innings_bronze.parquet")
 
 class Catalog:
     cricsheet_url = "https://cricsheet.org/downloads/all_json.zip"
@@ -31,6 +34,7 @@ class Catalog:
     logs = BaseDataPaths.logs
     ingest = BaseDataPaths.ingest
     raw = BaseDataPaths.raw
+    bronze = BronzeDataPaths
 
 
 if __name__ == "__main__":
