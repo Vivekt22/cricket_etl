@@ -63,6 +63,10 @@ def create_views(catalog: Catalog):
             from read_csv('{catalog.mapping.venue_map}')
             """
         )
+    
+    except Exception as e:
+        logger.error(f"Create views failed: {e}")
+        raise
 
     finally:
         con.sql("checkpoint cricket")

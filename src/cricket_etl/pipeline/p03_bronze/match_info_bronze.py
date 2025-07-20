@@ -1,3 +1,5 @@
+from datetime import datetime
+
 import polars as pl
 
 from cricket_etl.helpers.catalog import Catalog
@@ -51,13 +53,16 @@ def extract_match_info(match_id: str, match_info_dict: dict) -> dict:
 def get_match_info_df(catalog: Catalog) -> pl.DataFrame:
     """Extracts match information into a Polars DataFrame."""
     
-    df_match_info = pl.DataFrame([
-        extract_match_info(
-            raw_file.stem, 
-            F.read_pickle(raw_file)["info"]
-        )
-        for raw_file in catalog.raw.glob("*.pkl")
-    ])
+    records = []
+    for raw_file in catalog.raw.glob("*.pkl"):
+        try:
+            match_info = F.read_pickle(raw_file)["info"]
+            records.append(extract_match_info(raw_file.stem, match_info))
+        except Exception as e:
+            logger.error(f"Failed to process {raw_file.name}: {e}")
+            raise e
+
+    df_match_info = pl.DataFrame(records)
 
     df_match_info = df_match_info.cast(
         {
@@ -70,8 +75,9 @@ def get_match_info_df(catalog: Catalog) -> pl.DataFrame:
         }
     )
 
-    match_count = len(df_match_info)
+    df_match_info = df_match_info.with_columns(pl.lit(datetime.now()).cast(pl.Datetime).alias("created_at"))
 
+    match_count = len(df_match_info)
     logger.info(f"Match info extraction completed for {match_count} matches")
     
     return df_match_info

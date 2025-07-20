@@ -1,44 +1,6 @@
-2025-07-19 18:10:26,797 - INFO - Zip download comple
-2025-07-19 18:43:53,282 - INFO - Zip download comple
-2025-07-19 18:43:54,697 - INFO - Ingest folder cleared
-2025-07-19 18:43:57,149 - INFO - JSON files extracted
-2025-07-19 18:43:57,151 - INFO - Ingest completed
-2025-07-19 19:04:29,591 - INFO - Conversion from json to pkl completed
-2025-07-19 22:35:51,525 - INFO - INGEST: Zip download completed
-2025-07-19 22:35:53,251 - INFO - INGEST: Ingest folder cleared
-2025-07-19 22:35:55,766 - INFO - INGEST: JSON files extracted
-2025-07-19 22:35:55,768 - INFO - INGEST: Ingest completed
-2025-07-19 22:35:55,768 - INFO - INGEST: Ingest flow completed
-2025-07-20 01:02:36,677 - INFO - INGEST: Zip download completed
-2025-07-20 01:02:38,321 - INFO - INGEST: Ingest folder cleared
-2025-07-20 01:02:40,858 - INFO - INGEST: JSON files extracted
-2025-07-20 01:02:40,860 - INFO - INGEST: Ingest completed
-2025-07-20 01:02:40,860 - INFO - INGEST: Ingest flow completed
-2025-07-20 01:19:02,146 - INFO - INGEST: Zip download completed
-2025-07-20 01:19:03,500 - INFO - INGEST: Ingest folder cleared
-2025-07-20 01:19:05,948 - INFO - INGEST: JSON files extracted
-2025-07-20 01:19:05,950 - INFO - INGEST: Ingest completed
-2025-07-20 01:19:05,950 - INFO - INGEST: Ingest flow completed
-2025-07-20 01:37:11,382 - INFO - INGEST: Zip download completed
-2025-07-20 01:37:12,985 - INFO - INGEST: Ingest folder cleared
-2025-07-20 01:37:15,461 - INFO - INGEST: JSON files extracted
-2025-07-20 01:37:15,462 - INFO - INGEST: Ingest completed
-2025-07-20 01:37:15,462 - INFO - INGEST: Ingest flow completed
-2025-07-20 02:50:38,239 - INFO - INGEST: Zip download completed
-2025-07-20 02:50:38,240 - INFO - INGEST: Ingest folder cleared
-2025-07-20 02:50:38,241 - INFO - INGEST: JSON files extracted
-2025-07-20 02:54:34,506 - INFO - INGEST: Zip download completed
-2025-07-20 02:54:34,507 - INFO - INGEST: Ingest folder cleared
-2025-07-20 02:54:34,508 - INFO - INGEST: JSON files extracted
-2025-07-20 02:57:12,525 - INFO - INGEST: Zip download completed
-2025-07-20 02:57:12,526 - INFO - INGEST: Ingest folder cleared
-2025-07-20 02:57:12,527 - INFO - INGEST: JSON files extracted
-2025-07-20 03:01:16,925 - INFO - INGEST: Zip download completed
-2025-07-20 03:01:16,926 - INFO - INGEST: Ingest folder cleared
-2025-07-20 03:01:16,927 - INFO - INGEST: JSON files extracted
-2025-07-20 03:01:36,462 - INFO - INGEST: Zip download completed
-2025-07-20 03:01:36,463 - INFO - INGEST: Ingest folder cleared
-2025-07-20 03:01:36,464 - INFO - INGEST: JSON files extracted
-2025-07-20 03:03:02,391 - INFO - INGEST: Zip download completed
-2025-07-20 03:03:02,393 - INFO - INGEST: Ingest folder cleared
-2025-07-20 03:03:02,394 - INFO - INGEST: JSON files extracted
+2025-07-20 13:02:59,821 - INFO - INGEST: Zip download completed
+2025-07-20 13:03:01,483 - INFO - INGEST: Ingest folder cleared
+2025-07-20 13:03:04,112 - INFO - INGEST: JSON files extracted
+2025-07-20 13:03:04,113 - INFO - INGEST: Ingest completed
+2025-07-20 13:03:04,113 - INFO - INGEST: Ingest flow completed
+2025-07-20 13:03:04,113 - INFO - INGEST: Ingest duration: 10.20 seconds

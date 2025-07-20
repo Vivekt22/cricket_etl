@@ -32,6 +32,10 @@ def write_model_parquets(catalog: Catalog):
                 """
             )
 
+    except Exception as e:
+        logger.error(f"Write model parquets failed: {e}")
+        raise
+
     finally:
         con.close()
 

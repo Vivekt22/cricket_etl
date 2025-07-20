@@ -258,6 +258,10 @@ def create_wide_table(catalog: Catalog):
             """
         )
 
+    except Exception as e:
+        logger.error(f"Create wide table failed: {e}")
+        raise
+
     finally:
         con.sql("checkpoint cricket")
         con.close()
