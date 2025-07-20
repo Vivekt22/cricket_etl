@@ -28,3 +28,7 @@ build-backend = "hatchling.build"
 
 [tool.pytest.ini_options]
 pythonpath = ["src"]
+
+[tool.uv.scripts]
+run = "python -m cricket_etl"
+test = "pytest tests"
