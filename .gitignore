@@ -12,6 +12,7 @@ wheels/
 # IDE files
 .idea/
 .vscode/
+.DS_store
 
 # Notebooks
 notebooks/
