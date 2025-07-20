@@ -1,0 +1,14 @@
+data
+├── 01_ingest
+├── 02_raw
+├── 03_bronze
+├── 04_silver
+├── 05_model
+├── 06_helpers
+│   ├── mapping
+│   └── tracker
+├── 07_database
+├── 98_logs
+└── 99_temp
+
+12 directories
