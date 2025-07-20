@@ -93,6 +93,11 @@ def create_fact_cricket_table(catalog: Catalog):
             select * from t1
             """
         )
+
+    except Exception as e:
+        logger.error(f"Create fact table failed: {e}")
+        raise
+
     finally:
         con.close()
 

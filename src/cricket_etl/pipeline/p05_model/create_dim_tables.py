@@ -294,5 +294,8 @@ def create_dim_tables(catalog: Catalog):
         create_dim_batting_order(con)
         create_dim_date(con)
         create_dim_match_info(con)
+    except Exception as e:
+        logger.error(f"Create dim tables failed: {e}")
+        raise
     finally:
         con.close()

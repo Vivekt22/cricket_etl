@@ -1,3 +1,5 @@
+from datetime import datetime
+
 import polars as pl
 
 from cricket_etl.helpers.catalog import Catalog
@@ -28,8 +30,15 @@ def get_registry_df(catalog: Catalog) -> pl.DataFrame:
             all_registry_rows.extend(rows)
         except Exception as e:
             logger.warning(f"Failed to extract registry from {raw_file.stem}: {e}")
+            raise e
 
-    df_registry = pl.DataFrame(all_registry_rows, schema=["match_id", "person_name", "person_id"], orient='row')
+    df_registry = pl.DataFrame(all_registry_rows, schema=["match_id", "person_name", "person_id"], orient='row').cast({
+        "match_id": pl.String,
+        "person_name": pl.String,
+        "person_id": pl.String,
+    })
+
+    df_registry = df_registry.with_columns(pl.lit(datetime.now()).cast(pl.Datetime).alias("created_at"))
 
     logger.info(f"Registry extraction completed for {len(df_registry)} people")
 

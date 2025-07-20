@@ -7,14 +7,23 @@ logger = Logger("raw")
 
 def convert_ingest_json_to_pkl(catalog: Catalog) -> None:
     for json_file in catalog.ingest.glob("*.json"):
-        with open(json_file, "rb") as f:
-            data = json.load(f)
-        
         pkl_path = catalog.raw / f"{json_file.stem}.pkl"
-        with open(pkl_path, "wb") as pf:
-            pickle.dump(data, pf)
+        skipped_files = []
+        if pkl_path.exists():
+            skipped_files.append(pkl_path.stem)
+            continue
 
-    logger.info("Conversion from json to pkl completed")            
+        try:
+            with open(json_file, "rb") as f:
+                data = json.load(f)
+
+            with open(pkl_path, "wb") as pf:
+                pickle.dump(data, pf)
+
+            logger.info(f"Converted {json_file.name} to {pkl_path.name}. Existing files skipped = {len(skipped_files)}")
+        except Exception as e:
+            logger.error(f"Failed to process {json_file.name}: {e}")
+    logger.info("Conversion from json to pkl completed")
 
 
 if __name__ == "__main__":

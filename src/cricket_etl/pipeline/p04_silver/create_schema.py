@@ -10,6 +10,9 @@ def create_schema(catalog: Catalog):
         con.sql("create schema if not exists wide")
         con.sql("create schema if not exists model")
         con.sql("checkpoint cricket")
+    except Exception as e:
+        logger.error(f"Create schema failed: {e}")
+        raise
     finally:
         con.close()
 

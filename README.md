@@ -81,7 +81,7 @@ The Cricket Data Processing Pipeline is a modular and scalable framework designe
 To run the complete ETL process:
 
 ```bash
-uv run -m cricket_etl
+uv run -m cricket-etl
 ```
 
 ### **Individual Stage Execution**

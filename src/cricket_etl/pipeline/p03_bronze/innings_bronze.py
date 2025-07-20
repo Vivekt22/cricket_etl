@@ -1,3 +1,5 @@
+from datetime import datetime
+
 import polars as pl
 from polars import col, lit
 
@@ -95,7 +97,7 @@ def extract_innings(match_id: str, inning: dict, inning_num: int) -> pl.DataFram
         df_inning = df_inning.explode("wickets")
         df_inning = flatten_struct(df_inning, "wickets")
     # Process fielders if present.
-    if "fielders" in df_inning.columns:
+    if "fielders" in df_inning.columns and df_inning["fielders"].dtype == pl.List:
         df_inning = df_inning.explode("fielders")
         df_inning = flatten_struct(
             df_inning, "fielders", rename_map={"name": "fielder", "kind": "wicket_type"}
@@ -139,7 +141,7 @@ def get_innigns_df(catalog: Catalog) -> pl.DataFrame:
                     if df_inning is not None:
                         innings_frames.append(df_inning)
                 except Exception as e:
-                    print(f"Error processing match {match_id}, inning {inning_num}: {e}")
+                    logger.error(f"Error processing match {match_id}, inning {inning_num}: {e}")
                     raise e
 
     df_innings = (
@@ -147,6 +149,8 @@ def get_innigns_df(catalog: Catalog) -> pl.DataFrame:
         if innings_frames
         else pl.DataFrame()
     )
+
+    df_innings = df_innings.with_columns(pl.lit(datetime.now()).cast(pl.Datetime).alias("created_at"))
 
     delivery_count = len(df_innings)
 

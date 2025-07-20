@@ -1,24 +1,9 @@
-2025-07-19 23:20:11,825 - INFO - SILVER: Create schema completed
-2025-07-19 23:20:11,825 - INFO - SILVER: Create schema completed
-2025-07-19 23:20:11,865 - INFO - SILVER: Create views completed
-2025-07-19 23:20:11,865 - INFO - SILVER: Create views completed
-2025-07-19 23:20:11,892 - INFO - SILVER: Wide table v01 completed
-2025-07-19 23:20:11,929 - INFO - SILVER: Batting order completed
-2025-07-19 23:20:32,030 - INFO - SILVER: Create wide table completed
-2025-07-19 23:20:34,315 - INFO - SILVER: Create wide table completed
-2025-07-20 01:20:44,567 - INFO - SILVER: Create schema completed
-2025-07-20 01:20:44,567 - INFO - SILVER: Create schema completed
-2025-07-20 01:20:44,607 - INFO - SILVER: Create views completed
-2025-07-20 01:20:44,607 - INFO - SILVER: Create views completed
-2025-07-20 01:20:44,632 - INFO - SILVER: Wide table v01 completed
-2025-07-20 01:20:44,670 - INFO - SILVER: Batting order completed
-2025-07-20 01:21:06,644 - INFO - SILVER: Create wide table completed
-2025-07-20 01:21:08,996 - INFO - SILVER: Create wide table completed
-2025-07-20 01:38:56,269 - INFO - SILVER: Create schema completed
-2025-07-20 01:38:56,269 - INFO - SILVER: Create schema completed
-2025-07-20 01:38:56,282 - INFO - SILVER: Create views completed
-2025-07-20 01:38:56,282 - INFO - SILVER: Create views completed
-2025-07-20 01:38:56,306 - INFO - SILVER: Wide table v01 completed
-2025-07-20 01:38:56,344 - INFO - SILVER: Batting order completed
-2025-07-20 01:39:17,256 - INFO - SILVER: Create wide table completed
-2025-07-20 01:39:19,495 - INFO - SILVER: Create wide table completed
+2025-07-20 13:04:30,883 - INFO - SILVER: Create schema completed
+2025-07-20 13:04:30,883 - INFO - SILVER: Create schema completed
+2025-07-20 13:04:30,924 - INFO - SILVER: Create views completed
+2025-07-20 13:04:30,924 - INFO - SILVER: Create views completed
+2025-07-20 13:04:30,949 - INFO - SILVER: Wide table v01 completed
+2025-07-20 13:04:30,986 - INFO - SILVER: Batting order completed
+2025-07-20 13:04:53,301 - INFO - SILVER: Create wide table completed
+2025-07-20 13:04:55,640 - INFO - SILVER: Create wide table completed
+2025-07-20 13:04:55,640 - INFO - SILVER: Silver duration: 24.77 seconds

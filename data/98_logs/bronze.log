@@ -1,48 +1,8 @@
-2025-07-19 19:55:33,158 - INFO - BRONZE: Match info completed for 19488 matches
-2025-07-19 21:39:02,312 - INFO - BRONZE: Innings extraction completed for 10011510 deliveries
-2025-07-19 21:39:03,266 - INFO - BRONZE: Innings write completed
-2025-07-19 21:51:56,969 - INFO - BRONZE: Registry extraction completed for 19488 people
-2025-07-19 21:51:57,012 - INFO - BRONZE: Registry write completed
-2025-07-19 21:52:09,764 - INFO - BRONZE: Registry extraction completed for 19488 people
-2025-07-19 21:52:09,812 - INFO - BRONZE: Registry write completed
-2025-07-19 21:52:21,541 - INFO - BRONZE: Match info extraction completed for 19488 matches
-2025-07-19 21:52:21,547 - INFO - BRONZE: Match info write completed
-2025-07-19 22:15:18,686 - INFO - BRONZE: Registry extraction completed for 507488 people
-2025-07-19 22:15:18,719 - INFO - BRONZE: Registry write completed
-2025-07-19 22:36:10,824 - INFO - BRONZE: Match info extraction completed for 19488 matches
-2025-07-19 22:36:10,830 - INFO - BRONZE: Match info write completed
-2025-07-19 22:37:28,973 - INFO - BRONZE: Innings extraction completed for 10011510 deliveries
-2025-07-19 22:37:29,933 - INFO - BRONZE: Innings write completed
-2025-07-19 22:37:33,752 - INFO - BRONZE: Registry extraction completed for 507488 people
-2025-07-19 22:37:33,785 - INFO - BRONZE: Registry write completed
-2025-07-19 22:37:33,785 - INFO - BRONZE: Bronze flow completed
-2025-07-20 01:02:55,793 - INFO - BRONZE: Match info extraction completed for 19488 matches
-2025-07-20 01:02:55,798 - INFO - BRONZE: Match info write completed
-2025-07-20 01:04:14,736 - INFO - BRONZE: Innings extraction completed for 10011510 deliveries
-2025-07-20 01:04:15,672 - INFO - BRONZE: Innings write completed
-2025-07-20 01:04:19,544 - INFO - BRONZE: Registry extraction completed for 507488 people
-2025-07-20 01:04:19,577 - INFO - BRONZE: Registry write completed
-2025-07-20 01:04:19,577 - INFO - BRONZE: Bronze flow completed
-2025-07-20 01:19:20,646 - INFO - BRONZE: Match info extraction completed for 19488 matches
-2025-07-20 01:19:20,651 - INFO - BRONZE: Match info write completed
-2025-07-20 01:20:39,496 - INFO - BRONZE: Innings extraction completed for 10011510 deliveries
-2025-07-20 01:20:40,443 - INFO - BRONZE: Innings write completed
-2025-07-20 01:20:44,285 - INFO - BRONZE: Registry extraction completed for 507488 people
-2025-07-20 01:20:44,317 - INFO - BRONZE: Registry write completed
-2025-07-20 01:20:44,317 - INFO - BRONZE: Bronze flow completed
-2025-07-20 01:37:30,709 - INFO - BRONZE: Match info extraction completed for 19488 matches
-2025-07-20 01:37:30,715 - INFO - BRONZE: Match info write completed
-2025-07-20 01:38:51,271 - INFO - BRONZE: Innings extraction completed for 10011510 deliveries
-2025-07-20 01:38:52,149 - INFO - BRONZE: Innings write completed
-2025-07-20 01:38:55,994 - INFO - BRONZE: Registry extraction completed for 507488 people
-2025-07-20 01:38:56,027 - INFO - BRONZE: Registry write completed
-2025-07-20 01:38:56,027 - INFO - BRONZE: Bronze flow completed
-2025-07-20 02:57:12,530 - INFO - BRONZE: Match info extraction completed for 1 matches
-2025-07-20 02:57:12,533 - INFO - BRONZE: Match info write completed
-2025-07-20 03:01:16,934 - INFO - BRONZE: Innings write completed
-2025-07-20 03:01:16,936 - INFO - BRONZE: Match info extraction completed for 1 matches
-2025-07-20 03:01:16,937 - INFO - BRONZE: Match info write completed
-2025-07-20 03:01:36,471 - INFO - BRONZE: Innings write completed
-2025-07-20 03:03:02,401 - INFO - BRONZE: Innings write completed
-2025-07-20 03:03:02,402 - INFO - BRONZE: Match info extraction completed for 1 matches
-2025-07-20 03:03:02,404 - INFO - BRONZE: Match info write completed
+2025-07-20 13:03:07,816 - INFO - BRONZE: Match info extraction completed for 19488 matches
+2025-07-20 13:03:07,826 - INFO - BRONZE: Match info write completed
+2025-07-20 13:04:25,784 - INFO - BRONZE: Innings extraction completed for 10011510 deliveries
+2025-07-20 13:04:26,734 - INFO - BRONZE: Innings write completed
+2025-07-20 13:04:30,607 - INFO - BRONZE: Registry extraction completed for 507488 people
+2025-07-20 13:04:30,640 - INFO - BRONZE: Registry write completed
+2025-07-20 13:04:30,641 - INFO - BRONZE: Bronze flow completed
+2025-07-20 13:04:30,641 - INFO - BRONZE: Bronze duration: 86.28 seconds
