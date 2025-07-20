@@ -30,8 +30,13 @@ notebooks/
 *.bz2
 *.duckdb
 
-# But do not ignore any .gitkeep files under data/
+# Ignore everything under data
+data/**
+
+# But allow specific files back in
 !data/**/.gitkeep
-!data/01_raw/**/.gitkeep
+!data/06_helpers/
+!data/06_helpers/mapping/
+!data/06_helpers/mapping/*.csv
 
 .env
