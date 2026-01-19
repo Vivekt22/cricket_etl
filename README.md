@@ -74,6 +74,24 @@ The Cricket Data Processing Pipeline is a modular and scalable framework designe
 
 ---
 
+## Getting Started
+
+### **1. Environment Configuration**
+
+The pipeline requires a `.env` file in the project root directory with the `PROJECT_ROOT` variable set to the absolute path of the project. This is used to resolve data and log paths consistently.
+
+1. Create a `.env` file in the root directory:
+   ```bash
+   touch .env
+   ```
+
+2. Add the `PROJECT_ROOT` variable to the file:
+   ```env
+   PROJECT_ROOT="/path/to/your/project/cricket_etl"
+   ```
+
+---
+
 ## Running the Pipeline
 
 ### **Full Pipeline Execution**
