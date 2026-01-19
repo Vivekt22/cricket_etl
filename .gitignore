@@ -31,10 +31,12 @@ notebooks/
 *.duckdb
 
 # Ignore everything under data
+# Ignore all files under data, but allow directories and .gitkeep files
 data/**
+!data/**/
+!data/**/.gitkeep
 
 # But allow specific files back in
-!data/**/.gitkeep
 !data/06_helpers/
 !data/06_helpers/mapping/
 !data/06_helpers/mapping/*.csv
