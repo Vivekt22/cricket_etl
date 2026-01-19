@@ -4,3 +4,14 @@
 2025-07-20 13:03:04,113 - INFO - INGEST: Ingest completed
 2025-07-20 13:03:04,113 - INFO - INGEST: Ingest flow completed
 2025-07-20 13:03:04,113 - INFO - INGEST: Ingest duration: 10.20 seconds
+2026-01-18 21:50:42,022 - INFO - INGEST: Ingest duration: 13.51 seconds
+2026-01-18 21:51:08,144 - INFO - INGEST: Zip download completed
+2026-01-18 21:51:08,144 - ERROR - INGEST: Failed to clear ingest folder: [Errno 2] No such file or directory: '/Users/vivekthomas/Documents/projects/data_projects/p01_cricket/cricket-etl/cricket_etl/data/01_ingest'
+2026-01-18 21:51:08,144 - ERROR - INGEST: Ingest flow failed: [Errno 2] No such file or directory: '/Users/vivekthomas/Documents/projects/data_projects/p01_cricket/cricket-etl/cricket_etl/data/01_ingest'
+2026-01-18 21:51:08,144 - INFO - INGEST: Ingest duration: 18.84 seconds
+2026-01-18 21:52:32,894 - INFO - INGEST: Zip download completed
+2026-01-18 21:52:32,894 - INFO - INGEST: Ingest folder cleared
+2026-01-18 21:52:36,748 - INFO - INGEST: JSON files extracted
+2026-01-18 21:52:36,750 - INFO - INGEST: Ingest completed
+2026-01-18 21:52:36,750 - INFO - INGEST: Ingest flow completed
+2026-01-18 21:52:36,750 - INFO - INGEST: Ingest duration: 45.59 seconds

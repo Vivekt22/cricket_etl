@@ -14,3 +14,19 @@
 2025-07-20 13:04:56,542 - INFO - MODEL: Found 13 tables in schema 'model'.
 2025-07-20 13:04:56,646 - INFO - MODEL: All model tables written to Parquet successfully.
 2025-07-20 13:04:56,646 - INFO - MODEL: Model duration: 1.01 seconds
+2026-01-18 21:54:44,704 - INFO - MODEL: Dim batter completed
+2026-01-18 21:54:44,719 - INFO - MODEL: Dim bowler completed
+2026-01-18 21:54:44,736 - INFO - MODEL: Dim non striker completed
+2026-01-18 21:54:44,754 - INFO - MODEL: Dim player out completed
+2026-01-18 21:54:44,769 - INFO - MODEL: Dim fielder completed
+2026-01-18 21:54:44,772 - INFO - MODEL: Dim batting team completed
+2026-01-18 21:54:44,776 - INFO - MODEL: Dim bowling team completed
+2026-01-18 21:54:44,781 - INFO - MODEL: Dim innings completed
+2026-01-18 21:54:44,787 - INFO - MODEL: Dim wicket type completed
+2026-01-18 21:54:44,953 - INFO - MODEL: Dim batting order completed
+2026-01-18 21:54:44,957 - INFO - MODEL: Dim date completed
+2026-01-18 21:54:45,110 - INFO - MODEL: Dim match info completed
+2026-01-18 21:54:45,363 - INFO - MODEL: Fact table completed
+2026-01-18 21:54:55,621 - INFO - MODEL: Found 13 tables in schema 'model'.
+2026-01-18 21:54:55,698 - INFO - MODEL: All model tables written to Parquet successfully.
+2026-01-18 21:54:55,698 - INFO - MODEL: Model duration: 11.02 seconds

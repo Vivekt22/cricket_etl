@@ -15,3 +15,8 @@ def ingest_flow(catalog: Catalog):
         raise
     finally:
         logger.info(f"Ingest duration: {time.time() - start:.2f} seconds")
+
+
+if __name__ == "__main__":
+    catalog = Catalog()
+    ingest_flow(catalog)

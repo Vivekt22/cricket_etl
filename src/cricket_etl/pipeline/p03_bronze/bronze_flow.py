@@ -25,3 +25,8 @@ def bronze_flow(catalog: Catalog):
         raise
     finally:
         logger.info(f"Bronze duration: {time.time() - start:.2f} seconds")
+
+
+if __name__ == "__main__":
+    catalog = Catalog()
+    bronze_flow(catalog)

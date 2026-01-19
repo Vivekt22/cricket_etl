@@ -6,3 +6,14 @@
 2025-07-20 13:04:59,282 - INFO - MAIN: Database vacuum completed
 2025-07-20 13:04:59,282 - INFO - MAIN: Main pipeline completed
 2025-07-20 13:04:59,282 - INFO - MAIN: Total execution time: 125.37 seconds
+2026-01-18 21:50:42,022 - INFO - MAIN: Total execution time: 13.51 seconds
+2026-01-18 21:51:08,144 - ERROR - MAIN: Pipeline failed: [Errno 2] No such file or directory: '/Users/vivekthomas/Documents/projects/data_projects/p01_cricket/cricket-etl/cricket_etl/data/01_ingest'
+2026-01-18 21:51:08,144 - INFO - MAIN: Total execution time: 18.84 seconds
+2026-01-18 21:52:36,750 - INFO - MAIN: Ingest completed
+2026-01-18 21:52:49,496 - INFO - MAIN: Raw completed
+2026-01-18 21:54:28,413 - INFO - MAIN: Bronze completed
+2026-01-18 21:54:44,682 - INFO - MAIN: Silver completed
+2026-01-18 21:54:55,698 - INFO - MAIN: Model completed
+2026-01-18 21:54:57,884 - INFO - MAIN: Database vacuum completed
+2026-01-18 21:54:57,884 - INFO - MAIN: Main pipeline completed
+2026-01-18 21:54:57,884 - INFO - MAIN: Total execution time: 186.72 seconds
