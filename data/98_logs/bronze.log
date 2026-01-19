@@ -6,3 +6,11 @@
 2025-07-20 13:04:30,640 - INFO - BRONZE: Registry write completed
 2025-07-20 13:04:30,641 - INFO - BRONZE: Bronze flow completed
 2025-07-20 13:04:30,641 - INFO - BRONZE: Bronze duration: 86.28 seconds
+2026-01-18 21:52:53,524 - INFO - BRONZE: Match info extraction completed for 21053 matches
+2026-01-18 21:52:53,537 - INFO - BRONZE: Match info write completed
+2026-01-18 21:54:22,722 - INFO - BRONZE: Innings extraction completed for 10819735 deliveries
+2026-01-18 21:54:23,762 - INFO - BRONZE: Innings write completed
+2026-01-18 21:54:28,110 - INFO - BRONZE: Registry extraction completed for 548220 people
+2026-01-18 21:54:28,144 - INFO - BRONZE: Registry write completed
+2026-01-18 21:54:28,144 - INFO - BRONZE: Bronze flow completed
+2026-01-18 21:54:28,144 - INFO - BRONZE: Bronze duration: 98.65 seconds

@@ -15,3 +15,8 @@ def raw_flow(catalog: Catalog):
         raise
     finally:
         logger.info(f"Raw duration: {time.time() - start:.2f} seconds")
+
+
+if __name__ == "__main__":
+    catalog = Catalog()
+    raw_flow(catalog)
